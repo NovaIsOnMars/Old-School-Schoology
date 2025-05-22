@@ -1,0 +1,113 @@
+/* Controls style in the popup window of the extension */
+
+body {
+  min-width: 300px;
+  max-width: 100%;
+  margin: 0px;
+}
+header {
+    margin: 0px;
+    padding: 7px;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 25px auto;
+    height: 59px;
+    background-color: #333;
+    color: white;
+    border-bottom: 3px solid #888;
+}
+img.icon {
+    margin-top: 7px;
+    margin-left: 5px;
+    height: 50px;
+    grid-row: 1/3;
+}
+h1#title {
+    margin-left: 24px;
+    font-size: 20px;
+    line-height: 1px;
+    grid-column: 2;
+    grid-row: 1;
+    text-shadow: 2px 2px #aaa;
+}
+p#desc {
+    margin-top: 3px;
+    margin-left: 32px;
+    grid-column: 2;
+    grid-row: 2;
+}
+h2 {
+    margin-top: 7px;
+    text-decoration: black wavy underline;
+    margin-left: 10px;
+    text-align: center;
+}
+div.add {
+    display: grid;
+    margin: auto;
+    width: 75%;
+}
+input#websiteInput {
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 10px;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+button {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 5px;
+    background-color: #ebebeb;
+    border: 2px solid #555;
+    border-radius: 7px;
+}
+button:hover {
+    background-color: #dedede;
+}
+hr {
+    border-top: 1px dashed #dedede;
+    margin-bottom: 0px;
+}
+div.preferenceToggles {
+    display: flex;
+}
+div.revertToggle {
+    margin-left: 10px;
+    display: flex;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px;
+    height: 30px;
+    border-top: 1px solid #dedede;
+    background-color: #f7f7f7;
+    color: #333;
+}
+a.ghlink {
+    margin-left: 7px;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    min-width: 70px;
+    max-width: 70px;
+}
+a.ghlink>img {
+    margin-top: 7px;
+    grid-row: 1;
+    grid-column: 1;
+}
+a.ghlink>p {
+    margin-top: 10px;
+    grid-row: 1;
+    grid-column: 2;
+    color: #333;
+}
+span#version {
+    margin-top: 10px;
+    margin-right: 7px;
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+}

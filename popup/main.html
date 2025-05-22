@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <img class="icon" src="../images/extensionIcons/logo128.png">&nbsp;
+        <h1 id="title"></h1>
+        <p id="desc"></p>
+        <script src="syncManifest.js"></script>
+    </header>
+
+    <div class="content">
+        <h2>Affected Websites</h2>
+        <div class="add">
+            <input type="text" id="websiteInput" placeholder="Ex: app.schoology.com">
+            <button id="addWebsite">Add</button>
+        </div>
+        <ul id="websiteList"></ul>
+        <script src="allowedSites.js"></script>
+
+        <hr>
+
+        <div class="preferenceToggles">
+            <div class="revertToggle">
+                <input type="checkbox" id="revertFavicon">
+                <p>Revert Favicon</p>
+            </div>
+            <div class="revertToggle">
+                <input type="checkbox" id="revertUI">
+                <p>Revert UI</p>
+            </div>
+            <div class="revertToggle">
+                <input type="checkbox" id="revertIcons">
+                <p>Revert Icons</p>
+            </div>
+            <script src="preferenceToggles.js"></script>
+        </div>
+    </div>
+
+    <footer>
+        <a class="ghlink" href="https://github.com/NovaIsOnMars/Old-School-Schoology" target="_blank">
+            <img src="../images/github.png" width="20px">
+            <p>Github</p>
+        </a>
+        <span id="version"></span>
+    </footer>
+</body>
+</html>

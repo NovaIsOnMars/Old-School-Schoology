@@ -1,0 +1,42 @@
+{
+    "name": "Old-School Schoology",
+    "description": "Bring back the good ol' days with throwback Schoology icons.",
+    "version": "1.0.0",
+    "permissions": ["storage"],
+    "manifest_version": 3,
+    "icons": {
+        "32": "images/extensionIcons/logo32.png",
+        "48": "images/extensionIcons/logo48.png",
+        "64": "images/extensionIcons/logo64.png",
+        "128": "images/extensionIcons/logo128.png"
+    },
+    "action": {
+        "default_title": "Old-School Schoology",
+        "default_popup": "popup/main.html",
+        "default_icon": {
+            "32": "images/extensionIcons/logo32.png",
+            "48": "images/extensionIcons/logo48.png",
+            "64": "images/extensionIcons/logo64.png",
+            "128": "images/extensionIcons/logo128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["injectables/content.js", "injectables/ui.js", "injectables/imageMap.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "images/favicon.ico",
+            "images/imageMap.png",
+            "images/github.png",
+            "images/headerIcons/calendar.png",
+            "images/headerIcons/message.png",
+            "images/headerIcons/notification.png",
+            "images/headerIcons/search.png",
+            "images/headerIcons/showapps.png",
+            "injectables/allignMap.css",
+            "injectables/miscUI.css"
+        ],
+        "matches": ["<all_urls>"]
+    }]
+}

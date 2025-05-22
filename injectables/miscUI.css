@@ -1,0 +1,23 @@
+/* Misc UI changes; injected by ui.js */
+
+/* Hide new icon in top left and vertical bar to its right */
+svg._1ILJt.util-width-two-point-four-k8wBQ._1I3mg, div.CustomBrandingLogo-vertical-strip-background-color-3_NIE.util-width-zero-point-two-3yNp_.util-height-three-point-two-1MHxH._3Knne {
+    display: none !important;
+}
+
+/* Fix background colors (header, footer, buttons on header, and resource link on header) and fix inherited text colors from them */
+header._1Z0RM.Header-bottom-border-2ZE-7._3v0y7._349XD, footer._2T2dA._3_bfp, button._13cCs._2M5aC._24avl._3ghFm._3LeCL._31GLY._9GDcm.util-height-six-3PHnk.util-pds-icon-default-2kZM7._1Z0RM._1wP6w._2qcpH.xjR5v.util-v2-header-background-color-22JtI._1Z0RM.fjQuT.uQOmx, a._13cCs._2M5aC._24avl._3ghFm._3LeCL._31GLY._9GDcm.util-height-six-3PHnk.util-pds-icon-default-2kZM7._1Z0RM._1wP6w._2qcpH.xjR5v.util-v2-header-background-color-22JtI {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+/* Make the text white without a background on the bottom bar; (links & language button) */
+a.dVlNp._10N3s._3Wb6n._3LeCL._2s0LQ._3v0y7._3_bfp.sExtlink-processed, button._9e7c_._13cCs._3_bfp._2M5aC._3v0y7._2s0LQ.PPc7A._3LeCL.dVlNp._10N3s._3Wb6n {
+    background-color: unset !important;
+    color: #fff !important;
+}
+
+/* Makes the three dots icon next to the more button white (only seen when window is small) */
+svg.KebabIcon-kebab-icon-2-N7X._3ESp2.dlCBz._1I3mg.fjQuT.uQOmx {
+    fill: #fff !important;
+}
